@@ -69,9 +69,32 @@ button { font: inherit; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 48px; margin-bottom: 48px; }
 .section-heading h2 { margin-top: 22px; font-size: clamp(42px, 6.3vw, 82px); line-height: 1; }
 .section-note { max-width: 310px; margin: 0 2px 4px 0; color: #a4a49b; font-size: 12px; line-height: 1.8; }
-.project-feature { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(330px, .82fr); min-height: 476px; border: 1px solid var(--line); background: var(--panel); }
+.project-stack { display: grid; gap: 34px; min-width: 0; }
+.project-feature { display: grid; grid-template-columns: minmax(0, 1.18fr) minmax(330px, .82fr); min-width: 0; min-height: 476px; border: 1px solid var(--line); background: var(--panel); }
+.project-visual { min-width: 0; }
+.project-feature--secondary .project-visual { min-height: 330px; }
+.project-feature > .project-visual { width: 100%; max-width: 100%; min-width: 0 !important; }
 .project-visual { position: relative; display: block; min-height: 440px; overflow: hidden; background: #252622; }
 .project-visual::after { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.3), transparent 24%, transparent 76%, rgba(0,0,0,.1)); content: ""; pointer-events: none; }
+.enggo-visual { display: flex; align-items: center; justify-content: center; padding: clamp(22px, 4.5vw, 58px); background: #d9d6ca; }
+.enggo-visual::after { display: none; }
+.enggo-map { width: min(100%, 620px); padding: clamp(22px, 3.4vw, 42px); background: #f0efe8; color: #20221d; box-shadow: 0 24px 60px rgba(35,34,27,.16); }
+.enggo-map-top, .enggo-map-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.enggo-brand { font-size: 20px; font-weight: 650; letter-spacing: -.08em; }
+.enggo-brand span { color: #758063; }
+.enggo-map-label, .enggo-map-foot { color: #77786d; font-size: 8px; }
+.enggo-map-kicker { margin: 32px 0 10px; color: #78796f; font-size: 8px; }
+.enggo-map-title { margin: 0 0 25px; font-size: clamp(24px, 3.2vw, 40px); font-weight: 450; letter-spacing: -.06em; line-height: 1.08; }
+.enggo-map-title span { color: #838776; font-family: Georgia, serif; font-style: italic; font-weight: 400; }
+.enggo-flow { display: grid; gap: 7px; }
+.enggo-flow-step { display: grid; grid-template-columns: 24px 1fr 18px; gap: 10px; align-items: center; padding: 12px 13px; border: 1px solid #deddd4; background: rgba(255,255,255,.7); }
+.enggo-flow-step > .mono { color: #858777; font-size: 8px; }
+.enggo-flow-step > div { display: grid; gap: 3px; }
+.enggo-flow-step strong { font-size: 10px; font-weight: 550; }
+.enggo-flow-step small { color: #77786d; font-size: 8px; }
+.enggo-flow-step svg { width: 14px; color: #848875; }
+.enggo-map-foot { margin-top: 20px; letter-spacing: .04em; }
+.project-feature--secondary .project-visual::after { display: block; }
 .project-image { object-fit: cover; object-position: center; transition: transform .7s cubic-bezier(.22,1,.36,1), filter .4s ease; filter: saturate(.76); }
 .project-visual:hover .project-image { transform: scale(1.025); filter: saturate(1); }
 .visual-index { position: absolute; z-index: 1; top: 20px; left: 20px; padding: 8px 10px; background: rgba(17,18,15,.75); color: var(--paper); font-size: 8px; }
@@ -148,6 +171,8 @@ button { font: inherit; }
   .hero h1 { font-size: clamp(58px, 9vw, 86px); }
   .project-feature { grid-template-columns: 1fr; }
   .project-visual { min-height: 0; aspect-ratio: 1.6; }
+  .project-feature--secondary .project-visual { aspect-ratio: 1.8; }
+  .enggo-visual { aspect-ratio: auto; min-height: 420px; }
   .project-meta { padding: 32px; }
   .discipline { padding-inline: 18px; }
 }
@@ -171,8 +196,18 @@ button { font: inherit; }
   .section-heading h2 { margin-top: 17px; font-size: clamp(41px, 10vw, 61px); }
   .section-note { max-width: 390px; margin-top: 18px; font-size: 11px; }
   .project-visual { aspect-ratio: 1.12; }
+  .project-feature--secondary .project-visual { aspect-ratio: 1.4; }
+  .enggo-visual { min-height: 350px; padding: 18px; }
+  .enggo-map { padding: 20px 16px; }
+  .enggo-map-kicker { margin-top: 22px; }
+  .enggo-map-title { margin-bottom: 19px; font-size: clamp(24px, 7vw, 32px); }
+  .enggo-flow-step { grid-template-columns: 20px 1fr 16px; gap: 7px; padding: 10px 9px; }
+  .enggo-flow-step strong { font-size: 9px; }
+  .enggo-flow-step small { font-size: 7px; }
+  .enggo-map-foot { font-size: 7px; }
   .project-meta { padding: 24px 18px; }
   .project-title-row h3 { font-size: 21px; }
+  .project-title-row h3 span { display: block; margin-top: 3px; }
   .project-description { margin-block: 19px 23px; }
   .project-bottom { align-items: start; flex-direction: column; }
   .discipline-grid { grid-template-columns: 1fr; }
