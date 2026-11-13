@@ -1,0 +1,36 @@
+NGUYỄN THẾ VINH
+Intern / Fresher Web Developer — Fullstack / Frontend
+Hà Nội, Việt Nam · GMT+7
+
+CONTACT
+Email: ntv2609@gmail.com
+GitHub: https://github.com/ntv2609
+LinkedIn: https://linkedin.com/in/ntv2609
+
+EDUCATION
+Hanoi University of Industry (HaUI)
+Software Engineering · 2023–present
+
+PROJECTS
+English LMS
+Scalable, secure Learning Management System for English language centers.
+MERN stack, Next.js, advanced caching.
+Live: https://english-lms-one.vercel.app
+Code: https://github.com/ntv2609/english-lms
+
+Self-Order Kiosk App
+Refactored a food-delivery app into an in-store kiosk with guest and account flows,
+MoMo payment, an admin sales dashboard, and APIs tested with Postman.
+
+Perfume E-commerce Shop
+WordPress and WooCommerce shop with variable products, bulk CSV import/export,
+custom CSS, and widget UX refinements.
+
+SKILLS
+Web: React.js, Next.js, Node.js, Express.js, MongoDB, WordPress, WooCommerce
+Languages: JavaScript, C++, Java, HTML5, CSS3
+Tools: Git, GitHub, Postman
+
+LANGUAGES
+English: Technical documentation
+Chinese: HSK 3 in progress
