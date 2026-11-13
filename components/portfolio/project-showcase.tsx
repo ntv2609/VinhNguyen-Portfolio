@@ -29,18 +29,8 @@ export default function ProjectShowcase() {
       <div className="project-stack">
         <motion.article className="project-feature" initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.12 }} transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1] }}>
           <a className="project-visual enggo-visual" href={enggoRepository} target="_blank" rel="noreferrer" aria-label="Open EngGo English learning platform source repository on GitHub">
+            <Image src="/enggo-thumbnail.png" alt="Screenshot of EngGo's Vietnamese English-learning homepage, with course search and a learner profile." fill sizes="(max-width: 900px) 100vw, 56vw" className="enggo-thumbnail" />
             <span className="visual-index mono">PROJECT / 002 · FEATURED</span>
-            <div className="enggo-map" aria-hidden="true">
-              <div className="enggo-map-top"><span className="enggo-brand">eng<span>go</span></span><span className="enggo-map-label mono">PLATFORM MAP / 01</span></div>
-              <p className="enggo-map-kicker mono">LEARNING, CONNECTED</p>
-              <h3 className="enggo-map-title">A complete path<br /><span>through every lesson.</span></h3>
-              <div className="enggo-flow">
-                <div className="enggo-flow-step"><span className="mono">01</span><div><strong>Explore courses</strong><small>Find a course and get started</small></div><ArrowUpRight /></div>
-                <div className="enggo-flow-step"><span className="mono">02</span><div><strong>Learn &amp; practice</strong><small>Video lessons, Q&amp;A and AI study tools</small></div><ArrowUpRight /></div>
-                <div className="enggo-flow-step"><span className="mono">03</span><div><strong>Keep improving</strong><small>Writing feedback and course progress</small></div><ArrowUpRight /></div>
-              </div>
-              <div className="enggo-map-foot mono"><span>ENGGO / ENGLISH LEARNING PLATFORM</span><span>01 — 03</span></div>
-            </div>
             <span className="visual-link"><MoveUpRight size={18} /></span>
           </a>
           <div className="project-meta">
